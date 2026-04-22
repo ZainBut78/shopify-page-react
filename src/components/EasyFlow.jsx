@@ -1,8 +1,8 @@
-import React from 'react'
-
-const Section5 = () => {
-    return (
-        <div className="max-w-[1100px] bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mb-10 ml-20">
+ import React from 'react'
+ 
+ const easyflow = () => {
+   return (
+       <div className="max-w-[1100px] bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm mb-10 ml-20">
 
            
             <div className="flex justify-between items-center px-6 py-4">
@@ -16,7 +16,7 @@ const Section5 = () => {
                 <div className="md:w-[45%] bg-[#2d4d2b] rounded-xl overflow-hidden relative min-h-[220px]">
                    
                     <img
-                        src="/lastimage.svg"
+                        src="/assets/easyflow.svg"
                         alt="App Banner"
                         className="w-full h-full object-cover"
                     />
@@ -26,19 +26,19 @@ const Section5 = () => {
                 <div className="md:w-[55%] flex flex-col justify-between">
                     <div>
                         <h4 className="text-sm font-bold text-gray-800 mb-2">
-                            BetterDocs for Shopify – Advanced Knowledge Base App
+                           EasyFlow Product Options
                         </h4>
                         <p className="text-[12px] text-gray-500 mb-4 leading-relaxed">
-                            Boost customer satisfaction with an efficient AI-enhanced knowledge base & FAQ system. Build smart documentation and reduce support load effortlessly.
+                           EasyFlow is a Shopify app designed to enhance product customization and streamline the management of product options for online stores.
                         </p>
 
                         
                         <ul className="space-y-1.5 mb-6">
                             {[
-                                "Create high-performing docs & FAQs with Magic AI AutoWrite",
-                                "Enable Live Chat & Instant Answers for seamless customer support",
-                                "Customize your knowledge base with intuitive design options",
-                                "Track performance with in-depth analytics"
+                                "Allows customers to personalize products with text, images, and more",
+                                "Dynamically shows or hides options based on customer selections",
+                                "Customers can upload files for personalized products",
+                                "Centralized management of all product options and variants"
                             ].map((feature, i) => (
                                 <li key={i} className="flex items-start gap-2 text-[12px] text-gray-600">
                                     <span className="text-gray-400 mt-1">•</span>
@@ -65,7 +65,7 @@ const Section5 = () => {
             </div>
 
         </div>
-    )
-}
-
-export default Section5
+   )
+ }
+ 
+ export default easyflow
