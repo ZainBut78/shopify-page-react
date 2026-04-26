@@ -119,8 +119,8 @@ const OtherAppCard = () => {
                     onClick={nextCard}
                     disabled={currIdx === appsData.length - 1}
                     className={`text-lg transition-colors ${currIdx === appsData.length - 1
-                            ? "text-gray-200 cursor-not-allowed" // Disabled look
-                            : "text-gray-400 hover:text-gray-800" // Enabled look
+                            ? "text-gray-200 cursor-not-allowed"  
+                            : "text-gray-400 hover:text-gray-800"  
                         }`}
                 >
                     ❯
