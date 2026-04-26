@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import AppCard from './AppCard';
-
+ 
+ 
 
 
 const OtherAppCard = () => {
-    const appsData = [
+   const appsData = [
         {
-            title: ' EasyFlow Product Options',
-            desc: " EasyFlow is a Shopify app designed to enhance product customization and streamline the management of product options for online stores.",
-            img: 'src/assets/easyflow.svg',
+            title: 'EasyFlow Product Options',
+            desc: "EasyFlow is a Shopify app designed to enhance product customization and streamline the management of product options for online stores.",
+            img: '/easyflow.svg',        
             feature: [
                 "Allows customers to personalize products with text, images, and more",
                 "Dynamically shows or hides options based on customer selections",
@@ -18,8 +19,8 @@ const OtherAppCard = () => {
         },
         {
             title: 'BetterDocs for Shopify – Advanced Knowledge Base App',
-            desc: 'Boost customer satisfaction with an efficient AI-enhanced knowledge base & FAQ system. Build smart documentation and reduce support load effortlessly.',
-            img: '/lastimage.svg',
+            desc: 'Boost customer satisfaction with an efficient AI-enhanced knowledge base & FAQ system.',
+            img: '/lastimage.svg',           
             feature: [
                 "Create high-performing docs & FAQs with Magic AI",
                 "Enable Live Chat & Instant Answers",
@@ -30,9 +31,9 @@ const OtherAppCard = () => {
         {
             title: 'StoreFAQ-Product FAQ Builder',
             desc: 'StoreFAQ-Product FAQ Builder',
-            img: 'src/assets/store.svg',
+            img: '/store.svg',          
             feature: [
-                'Use the advanced Al Autowrite feature for writing FAQs instantly',
+                'Use the advanced AI Autowrite feature for writing FAQs instantly',
                 'Design the FAQ page with various customizations',
                 'Drag & drop to add the StoreFAQ App block anywhere on a page',
                 'Export or import FAQs without any hassle'
@@ -40,8 +41,8 @@ const OtherAppCard = () => {
         },
         {
             title: 'TrustSync - Review Collection App',
-            desc: 'Boost your business reputation by collecting reviews for Google Review, Trustpilot, Etsy & more while filtering out negative ratings.',
-            img: 'src/assets/trustsync.svg',
+            desc: 'Boost your business reputation by collecting reviews for Google Review, Trustpilot, Etsy & more.',
+            img: '/trustsync.svg',       
             feature: [
                 'Collect customers reviews via review collection emails',
                 'Auto-publish reviews on popular platforms',
@@ -51,8 +52,8 @@ const OtherAppCard = () => {
         },
         {
             title: 'StoreSEO - AI SEO Agent',
-            desc: 'StoreSEO is an AI-powered Shopify app to boost your store’s search engine rankings and organic traffic through AI SEO optimization.',
-            img: 'src/assets/seo.svg',
+            desc: 'StoreSEO is an AI-powered Shopify app to boost your store\'s search engine rankings.',
+            img: '/seo.svg',             
             feature: [
                 'Improve ranking in search engines with Product SEO Optimizer & Blog SEO.',
                 'Generate meta title, description, and tag with AI.',
