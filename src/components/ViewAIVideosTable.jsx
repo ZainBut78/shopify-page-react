@@ -6,15 +6,15 @@ const DataTable = pkg.default
 const ViewAIVideosTable = () => {
 
   const data = [
-    { id: 1, image: '/src/assets/images/bed02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '3 Videos', date: '12 Jun, 2025', progress: 'In Progress' },
-    { id: 2, image: '/src/assets/images/chaire.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', aiVideos: '3 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 3, image: '/src/assets/images/chaire02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '150 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 4, image: '/src/assets/images/chaire03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 5, image: '/src/assets/images/cloack.svg', product: 'stylish-summer-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 6, image: '/src/assets/images/cofee.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 7, image: '/src/assets/images/cofee02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 8, image: '/src/assets/images/cofee03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
-    { id: 9, image: '/src/assets/images/draze.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 1, image: '/images/bed02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '3 Videos', date: '12 Jun, 2025', progress: 'In Progress' },
+    { id: 2, image: '/images/chaire.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', aiVideos: '3 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 3, image: '/images/chaire02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '150 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 4, image: '/images/chaire03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 5, image: '/images/cloack.svg', product: 'stylish-summer-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 6, image: '/images/cofee.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 7, image: '/images/cofee02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 8, image: '/images/cofee03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
+    { id: 9, image: '/images/draze.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', aiVideos: '15 Videos', date: '12 Jun, 2025', progress: 'Completed' },
   ]
 
   // ---- Status Badge ----

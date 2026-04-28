@@ -123,7 +123,7 @@ const Table = () => {
 
             {row.progress === 'Not Generated' ? (
               <button onClick={() => setmodalOpen(true)} className="p-2 rounded-lg transition-all cursor-pointer hover:bg-gray-100 text-gray-400">
-                <img src="/src/assets/notgenrateicon.svg" alt="generate" className="w-4 h-4" />
+                <img src="/notgenrateicon.svg" alt="generate" className="w-4 h-4" />
               </button>
             ) : (
               <button
