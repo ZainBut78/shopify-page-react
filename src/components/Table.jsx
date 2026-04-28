@@ -13,18 +13,18 @@ const Table = () => {
   const [viewModalOpen, setViewModalOpen] = useState(false)  // ← naya
 
   const data = [
-    { id: 1, image: '/src/assets/images/case.svg', product: 'stylish-summer-necklace', images: 3, status: 'Active', inventory: '0 in stock for 50 variants', progress: 'Not Generated' },
-    { id: 2, image: '/src/assets/images/aramchair.svg', product: 'threader-necklace-closeup', images: 5, status: 'Active', inventory: '360 in stock', progress: 'Not Generated' },
-    { id: 3, image: '/src/assets/images/bed.svg', product: 'silver-threader-necklace', images: 2, status: 'Draft', inventory: '120 in stock', progress: 'Not Generated' },
-    { id: 4, image: '/src/assets/images/bed02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'In Progress' },
-    { id: 5, image: '/src/assets/images/chaire.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 6, image: '/src/assets/images/chaire02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 7, image: '/src/assets/images/chaire03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 8, image: '/src/assets/images/cloack.svg', product: 'stylish-summer-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 9, image: '/src/assets/images/cofee.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 10, image: '/src/assets/images/cofee02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 11, image: '/src/assets/images/cofee03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
-    { id: 12, image: '/src/assets/images/draze.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 1, image: '/images/case.svg', product: 'stylish-summer-necklace', images: 3, status: 'Active', inventory: '0 in stock for 50 variants', progress: 'Not Generated' },
+    { id: 2, image: '/images/aramchair.svg', product: 'threader-necklace-closeup', images: 5, status: 'Active', inventory: '360 in stock', progress: 'Not Generated' },
+    { id: 3, image: '/images/bed.svg', product: 'silver-threader-necklace', images: 2, status: 'Draft', inventory: '120 in stock', progress: 'Not Generated' },
+    { id: 4, image: '/images/bed02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'In Progress' },
+    { id: 5, image: '/images/chaire.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 6, image: '/images/chaire02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 7, image: '/images/chaire03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 8, image: '/images/cloack.svg', product: 'stylish-summer-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 9, image: '/images/cofee.svg', product: 'threader-necklace-closeup', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 10, image: '/images/cofee02.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 11, image: '/images/cofee03.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
+    { id: 12, image: '/images/draze.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
   ]
 
   const StatusBadge = ({ status }) => {
