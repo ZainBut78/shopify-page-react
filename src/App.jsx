@@ -4,9 +4,16 @@ import Home from './pages/Home.jsx'
 import VedioGenration from './pages/VedioGenration.jsx'
 import SubscribtionPlan from './pages/SubscribtionPlan.jsx'
 
+import MakeAIVideoModal from "./components/MakeAIVideoModal"
+
+
+
+
 const App = () => {
   return (
-    
+    <>
+
+  <MakeAIVideoModal/>
       <Routes>
         
         <Route path='/' element={<Home />} />
@@ -14,6 +21,7 @@ const App = () => {
         <Route path='/GenrateVedio' element={<VedioGenration />} />
       </Routes>
      
+    </>
   )
 }
 

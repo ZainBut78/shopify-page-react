@@ -1,9 +1,16 @@
-import React from 'react'
+ import React from 'react'
 import { Eye, RefreshCw } from 'lucide-react'
 import pkg from 'react-data-table-component'
+import { useState } from 'react'
+import MakeAIVideoModal from './MakeAIVideoModal'
+import ViewVideoModal from './ViewVideoModal'
+
 const DataTable = pkg.default
 
 const Table = () => {
+
+  const [modalOpen, setmodalOpen] = useState(false)
+  const [viewModalOpen, setViewModalOpen] = useState(false)  // ← naya
 
   const data = [
     { id: 1, image: '/src/assets/images/case.svg', product: 'stylish-summer-necklace', images: 3, status: 'Active', inventory: '0 in stock for 50 variants', progress: 'Not Generated' },
@@ -20,7 +27,6 @@ const Table = () => {
     { id: 12, image: '/src/assets/images/draze.svg', product: 'silver-threader-necklace', images: 2, status: 'Active', inventory: '120 in stock', progress: 'Completed' },
   ]
 
-   
   const StatusBadge = ({ status }) => {
     if (status === 'Active') {
       return (
@@ -29,11 +35,9 @@ const Table = () => {
         </span>
       )
     }
-     
     return <span className="text-sm text-gray-500">Draft</span>
   }
 
-   
   const ProgressBadge = ({ progress }) => {
     if (progress === 'Not Generated') {
       return (
@@ -61,7 +65,6 @@ const Table = () => {
     }
   }
 
-  
   const InventoryCell = ({ inventory }) => {
     const isZero = inventory.startsWith('0')
     return (
@@ -108,15 +111,18 @@ const Table = () => {
 
         return (
           <div className="flex items-center gap-2">
+
+            {/* Eye button — sirf Completed pe kaam karega */}
             <button
               disabled={eyeDisabled}
+              onClick={() => setViewModalOpen(true)}  // ← yeh add kiya
               className="p-2 rounded-lg transition-all cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-100 text-gray-400 hover:text-gray-700"
             >
               <Eye size={16} />
             </button>
 
             {row.progress === 'Not Generated' ? (
-              <button className="p-2 rounded-lg transition-all cursor-pointer hover:bg-gray-100 text-gray-400">
+              <button onClick={() => setmodalOpen(true)} className="p-2 rounded-lg transition-all cursor-pointer hover:bg-gray-100 text-gray-400">
                 <img src="/src/assets/notgenrateicon.svg" alt="generate" className="w-4 h-4" />
               </button>
             ) : (
@@ -134,12 +140,26 @@ const Table = () => {
   ]
 
   return (
-    <DataTable
-      columns={columns}
-      data={data}
-      pagination
-      highlightOnHover
-    />
+    <>
+      <DataTable
+        columns={columns}
+        data={data}
+        pagination
+        highlightOnHover
+      />
+
+      {/* Make AI Video Modal */}
+      <MakeAIVideoModal
+        isOpen={modalOpen}
+        onClose={() => setmodalOpen(false)}
+      />
+
+      {/* View Video Modal */}
+      <ViewVideoModal
+        isOpen={viewModalOpen}
+        onClose={() => setViewModalOpen(false)}
+      />
+    </>
   )
 }
 

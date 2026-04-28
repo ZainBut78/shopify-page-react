@@ -15,7 +15,7 @@ const SubscribtionPlan = () => {
           <PlanCard />
           <div className='flex gap-2 mt-4'>
 
-            {/* Creator Card */}
+           
             <CreatorPlanCard
               planName="Creator"
               price={20}
@@ -24,7 +24,7 @@ const SubscribtionPlan = () => {
               highlighted={false}
             />
 
-            {/* Scale Card — highlighted */}
+            
             <CreatorPlanCard
               planName="Scale"
               price={40}
@@ -33,7 +33,7 @@ const SubscribtionPlan = () => {
               highlighted={true}
             />
 
-            {/* Mastery Card */}
+             
             <CreatorPlanCard
               planName="Mastery"
               price={60}
