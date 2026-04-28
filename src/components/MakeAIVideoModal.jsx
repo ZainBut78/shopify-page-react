@@ -11,14 +11,14 @@ const MakeAIVideoModal = ({ isOpen, onClose }) => {
     const visibleCount = 4
 
     const productImages = [
-        '/src/assets/images/case.svg',
-        '/src/assets/images/aramchair.svg',
-        '/src/assets/images/bed.svg',
-        '/src/assets/images/bed02.svg',
-        '/src/assets/images/chaire.svg',
-        '/src/assets/images/bed.svg',
-        '/src/assets/images/bed02.svg',
-        '/src/assets/images/chaire.svg',
+        '/images/case.svg',
+        '/images/aramchair.svg',
+        '/images/bed.svg',
+        '/images/bed02.svg',
+        '/images/chaire.svg',
+        '/images/bed.svg',
+        '/images/bed02.svg',
+        '/images/chaire.svg',
     ]
 
     const toggleImage = (index) => {
